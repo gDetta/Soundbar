@@ -5,16 +5,16 @@ import re
 
 # Mappa combinazioni di tasti ai suoni
 # key_comb, song, button_pos(raw, column)
-sounds = [ ("ctrl+0", r"sounds\stop.mp3",       (3,1)),   
-           ("ctrl+1", r"sounds\cricket.mp3",    (2,0)), 
-           ("ctrl+2", r"sounds\splash.mp3",     (2,1)),
-           ("ctrl+3", r"sounds\faccetta.mp3",   (2,2)),   
-           ("ctrl+4", r"sounds\beep.mp3",       (1,0)),   
-           ("ctrl+5", r"sounds\fart.mp3",       (1,1)),
-           ("ctrl+6", r"sounds\problemi.mp3",   (1,2)),   
-           ("ctrl+7", r"sounds\ngr.mp3",        (0,0)),   
-           ("ctrl+8", r"sounds\macellaio.mp3",  (0,1)),
-           ("ctrl+9", r"sounds\oh_no.mp3",      (0,2))
+sounds = [ ("ctrl+0", r"Soundbar\app\sounds\stop.mp3",       (3,1)),   
+           ("ctrl+1", r"Soundbar\app\sounds\cricket.mp3",    (2,0)), 
+           ("ctrl+2", r"Soundbar\app\sounds\splash.mp3",     (2,1)),
+           ("ctrl+3", r"Soundbar\app\sounds\faccetta.mp3",   (2,2)),   
+           ("ctrl+4", r"Soundbar\app\sounds\beep.mp3",       (1,0)),   
+           ("ctrl+5", r"Soundbar\app\sounds\fart.mp3",       (1,1)),
+           ("ctrl+6", r"Soundbar\app\sounds\problemi.mp3",   (1,2)),   
+           ("ctrl+7", r"Soundbar\app\sounds\ngr.mp3",        (0,0)),   
+           ("ctrl+8", r"Soundbar\app\sounds\macellaio.mp3",  (0,1)),
+           ("ctrl+9", r"Soundbar\app\sounds\oh_no.mp3",      (0,2))
         ]
 
 # # Get key grid dimension #-------------------------------------------
