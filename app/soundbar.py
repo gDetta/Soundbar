@@ -2,19 +2,31 @@ import tkinter as tk
 import pygame
 import keyboard  # Libreria per rilevare tasti globalmente
 import re
+import sys
+import os
+
+# Get path, to be runned from both terminal or .exe
+if getattr(sys, 'frozen', False):
+    # Running in a bundled app
+    base_path = sys._MEIPASS
+else:
+    # Running in a normal Python environment
+    base_path = os.path.dirname(__file__)
+
+
 
 # Mappa combinazioni di tasti ai suoni
 # key_comb, song, button_pos(raw, column)
-sounds = [ ("ctrl+0", r"Soundbar\app\sounds\stop.mp3",       (3,1)),   
-           ("ctrl+1", r"Soundbar\app\sounds\cricket.mp3",    (2,0)), 
-           ("ctrl+2", r"Soundbar\app\sounds\splash.mp3",     (2,1)),
-           ("ctrl+3", r"Soundbar\app\sounds\faccetta.mp3",   (2,2)),   
-           ("ctrl+4", r"Soundbar\app\sounds\beep.mp3",       (1,0)),   
-           ("ctrl+5", r"Soundbar\app\sounds\fart.mp3",       (1,1)),
-           ("ctrl+6", r"Soundbar\app\sounds\problemi.mp3",   (1,2)),   
-           ("ctrl+7", r"Soundbar\app\sounds\ngr.mp3",        (0,0)),   
-           ("ctrl+8", r"Soundbar\app\sounds\macellaio.mp3",  (0,1)),
-           ("ctrl+9", r"Soundbar\app\sounds\oh_no.mp3",      (0,2))
+sounds = [ ("ctrl+0",  f"{base_path}"+r"\sounds\stop.mp3",       (3,1)),   
+           ("ctrl+1",  f"{base_path}"+r"\sounds\cricket.mp3",    (2,0)), 
+           ("ctrl+2",  f"{base_path}"+r"\sounds\splash.mp3",     (2,1)),
+           ("ctrl+3",  f"{base_path}"+r"\sounds\faccetta.mp3",   (2,2)),   
+           ("ctrl+4",  f"{base_path}"+r"\sounds\beep.mp3",       (1,0)),   
+           ("ctrl+5",  f"{base_path}"+r"\sounds\fart.mp3",       (1,1)),
+           ("ctrl+6",  f"{base_path}"+r"\sounds\problemi.mp3",   (1,2)),   
+           ("ctrl+7",  f"{base_path}"+r"\sounds\ngr.mp3",        (0,0)),   
+           ("ctrl+8",  f"{base_path}"+r"\sounds\macellaio.mp3",  (0,1)),
+           ("ctrl+9",  f"{base_path}"+r"\sounds\oh_no.mp3",      (0,2))
         ]
 
 # # Get key grid dimension #-------------------------------------------

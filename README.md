@@ -8,3 +8,9 @@ Works also in background.
 A window is also present to show the song related to keys:
 
 ![1739646356817](images/README/1739646356817.png)
+
+To build using `PyInstaller`:
+
+```
+python -m PyInstaller --windowed  --add-data "app\sounds;sounds" app/soundbar.py
+```
