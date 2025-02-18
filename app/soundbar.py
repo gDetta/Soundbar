@@ -17,16 +17,16 @@ else:
 
 # Mappa combinazioni di tasti ai suoni
 # key_comb, song, button_pos(raw, column)
-sounds = [ ("ctrl+0",  f"{base_path}"+r"\sounds\stop.mp3",       (3,1)),   
-           ("ctrl+1",  f"{base_path}"+r"\sounds\cricket.mp3",    (2,0)), 
-           ("ctrl+2",  f"{base_path}"+r"\sounds\splash.mp3",     (2,1)),
-           ("ctrl+3",  f"{base_path}"+r"\sounds\faccetta.mp3",   (2,2)),   
-           ("ctrl+4",  f"{base_path}"+r"\sounds\beep.mp3",       (1,0)),   
-           ("ctrl+5",  f"{base_path}"+r"\sounds\fart.mp3",       (1,1)),
-           ("ctrl+6",  f"{base_path}"+r"\sounds\problemi.mp3",   (1,2)),   
-           ("ctrl+7",  f"{base_path}"+r"\sounds\ngr.mp3",        (0,0)),   
-           ("ctrl+8",  f"{base_path}"+r"\sounds\macellaio.mp3",  (0,1)),
-           ("ctrl+9",  f"{base_path}"+r"\sounds\oh_no.mp3",      (0,2))
+sounds = [ ("ctrl+alt+0",  f"{base_path}"+r"\sounds\stop.mp3",       (3,1)),   
+           ("ctrl+alt+1",  f"{base_path}"+r"\sounds\cricket.mp3",    (2,0)), 
+           ("ctrl+alt+2",  f"{base_path}"+r"\sounds\splash.mp3",     (2,1)),
+           ("ctrl+alt+3",  f"{base_path}"+r"\sounds\faccetta.mp3",   (2,2)),   
+           ("ctrl+alt+4",  f"{base_path}"+r"\sounds\beep.mp3",       (1,0)),   
+           ("ctrl+alt+5",  f"{base_path}"+r"\sounds\fart.mp3",       (1,1)),
+           ("ctrl+alt+6",  f"{base_path}"+r"\sounds\problemi.mp3",   (1,2)),   
+           ("ctrl+alt+7",  f"{base_path}"+r"\sounds\ngr.mp3",        (0,0)),   
+           ("ctrl+alt+8",  f"{base_path}"+r"\sounds\macellaio.mp3",  (0,1)),
+           ("ctrl+alt+9",  f"{base_path}"+r"\sounds\oh_no.mp3",      (0,2))
         ]
 
 # # Get key grid dimension #-------------------------------------------
